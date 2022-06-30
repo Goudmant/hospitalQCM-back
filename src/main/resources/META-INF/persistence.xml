@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="com.example_hospitalQCM-back_jar_0.0.1-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.example.hospitalQCMback.entity.Roles</class>
+    <class>com.example.hospitalQCMback.entity.UserConnect</class>
+    <class>com.example.hospitalQCMback.entity.Questions</class>
+    <class>com.example.hospitalQCMback.entity.QuestionsAffinée</class>
+    <class>com.example.hospitalQCMback.entity.Contact</class>
+    <class>com.example.hospitalQCMback.entity.Theme</class>
+    <class>com.example.hospitalQCMback.entity.ResultatValeurQcm</class>
+    <class>com.example.hospitalQCMback.entity.ReponseFinal</class>
+    <class>com.example.hospitalQCMback.entity.ReponseQuestions</class>
+    <class>com.example.hospitalQCMback.entity.Medecin</class>
+    <class>com.example.hospitalQCMback.entity.ReponsesUser</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mariadb://localhost:3306/hospitalqcm"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+    </properties>
+  </persistence-unit>
+</persistence>
